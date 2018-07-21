@@ -30,7 +30,7 @@ public class Basic_Selenium {
         //driver.get("https://www.costco.com");
         //To open an URL and it will wait till the whole page gets loaded
 
-        // driver.navigate().refresh();
+        driver.navigate().refresh();
         //To refresh the URL
 
 
