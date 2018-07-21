@@ -103,9 +103,18 @@ public class Basic_Selenium {
 
     @After
     public void tearDown(){
-        // driver.close(); //To close current WebDriver instance
-        // driver.quit();  // To close all the opened WebDriver instances
+        delayFor(3000);
+        driver.close(); //To close current WebDriver instance
+        driver.quit();  // To close all the opened WebDriver instances
         //Add one more line
+    }
+    
+    public void delayFor(int TimeInMili){
+        try {
+            Thread.sleep(TimeInMili);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 }
